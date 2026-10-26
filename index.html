@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bake & Blend co | Pemesanan Minuman</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🍪 The Bake & Blend co 🍉</h1>
+    <p>Segarnya Buah, Nikmatnya cookies!</p>
+</header>
+
+<nav>
+    <a href="#home">Beranda</a>
+    <a href="#menu">Menu</a>
+    <a href="#keranjang-section">Keranjang</a>
+    <a href="#checkout">Checkout</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Fresh Drink, Fresh Mood!</h2>
+    <p>
+        Nikmati kesegaran buah dan susu dalam setiap gelas
+        dan kelezatan cookies.
+        <br>
+        Enak, segar, dan ramah di kantong!
+    </p>
+    <button type="button" onclick="location.href='#menu'">
+        Pesan Sekarang
+    </button>
+</div>
+
+<section id="menu">
+    <h2 class="judul">🥤 Menu Minuman Kami</h2>
+
+    <div class="menu">
+        <div class="produk">
+            <div class="gambar">🍪</div>
+            <h3>Cookies</h3>
+            <p>Perpaduan coklat dan gula yang lezat.</p>
+            <div class="harga">Rp5.000</div>
+            <button type="button" onclick="tambahPesanan('cookies')">
+                + Tambah ke Keranjang
+            </button>
+        </div>
+
+        <div class="produk">
+            <div class="gambar">🍉</div>
+            <h3>Es Semangka Susu</h3>
+            <p>Kesegaran semangka dengan perpaduan susu.</p>
+            <div class="harga">Rp5.000</div>
+            <button type="button" onclick="tambahPesanan('semangka')">
+                + Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="keranjang-section">
+    <h2 class="judul">🛒 Keranjang Pesanan</h2>
+
+    <div id="keranjang">
+        <p>Keranjang masih kosong.</p>
+    </div>
+
+    <div class="reset-container">
+        <button
+            type="button"
+            class="tombol-reset"
+            onclick="resetKeranjang()">
+            🔄 Reset Semua Pesanan
+        </button>
+    </div>
+</section>
+
+<section class="info">
+    <h2>Tentang The Bake & Blend co</h2>
+    <p>
+        The Bake & Blend co menyediakan minuman dingin berbahan
+        dasar buah dan susu yang cocok dinikmati saat cuaca panas,
+        serta cookies yang nikmat sebagai pendamping minuman segar.
+        <br>
+        <strong>Harga hemat, kesegaran nikmat!</strong>
+    </p>
+</section>
+
+<section id="checkout">
+    <h2 class="judul">📝 Form Pemesanan</h2>
+
+    <form class="form" id="form-pesan">
+        <label for="nama">Nama Pemesan</label>
+        <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama kamu"
+            required>
+
+        <label for="kelas">Kelas</label>
+        <input
+            type="text"
+            id="kelas"
+            placeholder="Contoh: XII RPL 2"
+            required>
+
+        <label for="wa">Nomor WhatsApp Pemesan</label>
+        <input
+            type="tel"
+            id="wa"
+            placeholder="08xxxxxxxxxx"
+            required>
+
+        <label for="catatan">Catatan (opsional)</label>
+        <textarea
+            id="catatan"
+            rows="3"
+            placeholder="Catatan pesanan"></textarea>
+
+        <button type="submit">
+            Konfirmasi Pesanan via WhatsApp
+        </button>
+    </form>
+</section>
+
+<footer>
+    <h3>🍪 The Bake & Blend co 🍉</h3>
+    <p>Segarnya Buah, Nikmatnya Susu!</p>
+    <p>© 2026 The Bake & Blend co | Produk Kewirausahaan Kelas</p>
+</footer>
+
+</body>
+</html>
