@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fffaf0;
+    color: #333;
+}
+
+header {
+    background: #ffb84d;
+    color: #713d16;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    background: #713d16;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff0cc;
+}
+
+.hero h2 {
+    color: #713d16;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+section {
+    padding: 35px 6%;
+}
+
+.judul {
+    text-align: center;
+    color: #713d16;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #e98524;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.hero button {
+    margin-top: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.produk {
+    background: white;
+    border-radius: 15px;
+    padding: 25px 18px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.gambar {
+    font-size: 85px;
+    margin-bottom: 15px;
+}
+
+.produk h3 {
+    margin-bottom: 10px;
+}
+
+.produk p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.harga {
+    color: #d76a13;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.reset-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info {
+    background: #ffedc7;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#keranjang {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    line-height: 2;
+}
+
+.item button {
+    padding: 6px 12px;
+    margin: 0 3px;
+}
+
+.total {
+    color: #713d16;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 22px 0;
+}
+
+.tombol-reset {
+    background: #dc3545;
+}
+
+.tombol-hapus {
+    background: #777;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    background: #713d16;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .produk button {
+        max-width: 100%;
+    }
+}
